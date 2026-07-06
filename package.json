@@ -1,0 +1,19 @@
+{
+  "name": "mostaql-monitor",
+  "version": "1.0.0",
+  "description": "Monitors Mostaql for new projects and sends Telegram notifications.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "postinstall": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.1",
+    "node-cron": "^3.0.3",
+    "playwright": "^1.41.1"
+  }
+}
