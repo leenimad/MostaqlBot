@@ -9,39 +9,70 @@ function normalizeArabic(text) {
 }
 
 export const keywordGroups = {
-    // 🌐 Web Development (تطوير المواقع)
+    // 🌐 Web Development & Software Engineering (برمجة وتطوير المواقع والأنظمة)
     WebDev: {
+        // --- Your Custom Arabic Keywords ---
+        'موقع': 1,
+        'مصمم': 1,
+        'مطور': 2,
+        'مطور فل ستاك': 4,
+        'Full Stack': 4,
+        'Full-Stack': 4,
+        'مبرمج': 2,
+        'تصميم': 1,
+        'برمجة': 2,
+        'تطوير': 1,
+        'صفحات': 1,
+        'الكتروني': 1,
+        'الكترونية': 1,
+        'منصة': 2,
+
+        // --- Mostaql-Specific Arabic Suggestions ---
+        'متجر الكتروني': 3,     // E-commerce store (Very common!)
+        'لوحة تحكم': 3,        // Dashboard / Admin Panel (Very common!)
+        'صفحة هبوط': 2,        // Landing Page
+        'لاندينج': 2,          // Landing Page (transliterated)
+        'واجهات': 2,           // Frontend / UI
+        'تطبيق ويب': 3,        // Web Application
+        'قاعدة بيانات': 2,     // Database
+        'ربط': 2,              // Integration / Connecting APIs
+        'بوابة دفع': 3,        // Payment Gateway (Stripe/PayPal)
+
+        // --- Technical Stacks (Bilingual) ---
         'React': 3,
         'رياكت': 3,
         'Next.js': 3,
         'نكست': 3,
-        'موقع الكتروني': 2,
-        'برمجة موقع': 2,
-        'تصميم موقع': 1,
-        'ويب': 1,
-        'فرونت': 2,
-        'Frontend': 2,
-        'باك اند': 2,
-        'Backend': 2,
+        'Node.js': 3,
+        'نود': 3,
+        'Express.js': 3,    
+        'إكسبريس': 3,
+        'typeScript': 2,
+        'تايب سكريبت': 2,
+        'javascript': 2,
         'جافا سكريبت': 2,
-        'JavaScript': 2
+        'mongoDB': 3,
+        'مونغو': 3,
+        'MySQL': 3,
+
     },
 
-    // 📱 Mobile Apps (تطبيقات الجوال)
+    // 📱 Mobile Apps Development (برمجة تطبيقات الجوال)
     MobileDev: {
         'تطبيق': 2,
+        'تطبيقات': 1,
+        'جوال': 1,
         'اندرويد': 3,
         'Android': 3,
         'ايفون': 3,
         'iOS': 3,
         'فلاتر': 3,
         'Flutter': 3,
-        'تطبيقات': 1,
-        'جوال': 1
+        
     },
 
-    // 🤖 AI & Python (الذكاء الاصطناعي وبايثون)
-    AI_Python: {
+    // 🤖 Artificial Intelligence & Automation (الذكاء الاصطناعي والأتمتة)
+    AI_Automation: {
         'بايثون': 3,
         'Python': 3,
         'ذكاء اصطناعي': 3,
@@ -49,7 +80,9 @@ export const keywordGroups = {
         'بوت': 2,
         'Bot': 2,
         'شات جي بي تي': 3,
-        'ChatGPT': 3
+        'ChatGPT': 3,
+        'تلقائي': 1,
+        'اوتوماتيك': 2
     }
 };
 
