@@ -1,9 +1,18 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+// 🚀 Automatically clean up any accidental spaces or quotation marks from the settings
+const cleanToken = (process.env.BOT_TOKEN || '')
+    .trim()
+    .replace(/^['"]|['"]$/g, ''); // Removes quotes if present
+
+const cleanChatId = (process.env.CHAT_ID || '')
+    .trim()
+    .replace(/^['"]|['"]$/g, ''); // Removes quotes if present
+
 export const config = {
-    botToken: process.env.BOT_TOKEN,
-    chatId: process.env.CHAT_ID,
+    botToken: cleanToken,
+    chatId: cleanChatId,
     checkInterval: parseInt(process.env.CHECK_INTERVAL_MINUTES || '1', 10),
     projectUrl: process.env.PROJECT_URL || 'https://mostaql.com/projects',
     headless: process.env.HEADLESS === 'true',

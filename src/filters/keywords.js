@@ -11,7 +11,7 @@ function normalizeArabic(text) {
 export const keywordGroups = {
     // 🌐 Web Development & Software Engineering (برمجة وتطوير المواقع والأنظمة)
     WebDev: {
-        // --- Your Custom Arabic Keywords ---
+        
         'موقع': 1,
         'مصمم': 1,
         'مطور': 2,
