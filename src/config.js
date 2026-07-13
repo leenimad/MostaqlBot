@@ -35,4 +35,4 @@ console.log(`[CONFIG DIAGNOSTIC] Loaded ChatID Preview: "${maskedChatId}"`);
 if (!config.botToken || !config.chatId) {
     console.error('❌ FATAL: BOT_TOKEN and CHAT_ID are required in .env');
     process.exit(1);
-}git add .
+}
